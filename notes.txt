@@ -1,0 +1,67 @@
+backend - EXPRESS
+
+create a folder and open cmd
+
+npm init -y --> imports packeges
+
+npm i(install) express --> express installation   if changes made should save them and and run again  -->  nodemon avoids saving and running again  
+npm i express is a package that is used to create a server 
+  
+npm i(install) nodemon  -->   
+npm i nodemon is a package that is used to restart the server automatically when we make change in the code.
+
+replace script in package.json with this "start":"nodemon server.js" --> server.js --> filename 
+Now it will be easy to run the code using npm start
+
+packsge.json -> scripts -> test to "start":"nodemon server.js"   --> incase if you want to run the code with your name then "your_name":"nodemon server.js"
+
+HTTP STATUSCODES
+
+100  -->  information
+
+200 series -->  success messages
+
+300  -->
+
+400 series -->  clientside error
+
+500 series -->  serverside error
+
+
+HTTP METHODS(HTTP VERBS)
+
+1. GET  (fetch data from db)  -- return the value
+2. PUT  (update -->  whole)
+3. POST  (create a new data)
+4. DELETE  (delete
+5. PATCH  (update --> particular piece of data)
+
+MVC ARCHTECTURE
+
+M=Model
+V=Views   (frontend)
+C= Controller  (Entry point)
+
+params is used to get parameters fro the URL
+
+npm install ejs
+
+! tab --> basic html structure will appear
+
+ res.render("index.ejs");  // to call the frontend index.ejs file in server.js
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+npm i dotenv
+npm i mongoose
+npm i body-parser
+
+
+
+"type":"module" in package.json is given then we can use normal  import and export satatements as in React
+
+cors -->  cross object resource sharing
+
