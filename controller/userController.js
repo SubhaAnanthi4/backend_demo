@@ -68,12 +68,12 @@ export const find=async(req,res)=>
     {
         try{
             const id=req.params.id;
-            const founduser =await user.findById(id);
-            if(!founduser){
+            const userExist =await user.findOne({_id:id});
+            if(!userExist){
                 return res.status(404).json({message:"User not found"});
             }
-            
-            res.status(200).json({message:"User displayed sucessfully"});
+             const finduser= await user.findById(id,req.body);
+            res.status(200).json({finduser});
         }
         catch(err){
             res.status(500).json({error:"internal server error"});

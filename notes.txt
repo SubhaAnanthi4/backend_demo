@@ -63,5 +63,13 @@ npm i body-parser
 
 "type":"module" in package.json is given then we can use normal  import and export satatements as in React
 
-cors -->  cross object resource sharing
+cors -->  cross origin resource sharing
+
+
+connect backend to frontend
+
+npm i cors
+
+frontend 
+npm i axios
 
