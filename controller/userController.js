@@ -30,7 +30,7 @@ export const fetch=async(req,res)=>
 
     }
     catch(err){
-        res.status(500).json({error:"internal server error"})
+        res.status(500).json({error:"Internal server error"})
     }
 }
 
@@ -46,7 +46,7 @@ export const update=async(req,res)=>
         res.status(200).json({updateUser});
     }
     catch(err){
-        res.status(500).json({error:"internal server error"});
+        res.status(500).json({error:"Internal server error"});
     }
 }
 export const deleteuser=async(req,res)=>
@@ -61,7 +61,7 @@ export const deleteuser=async(req,res)=>
         res.status(200).json({message:"User deleted sucessfully"});
     }
     catch(err){
-        res.status(500).json({error:"internal server error"});
+        res.status(500).json({error:"Internal server error"});
     }
 }
 export const find=async(req,res)=>
@@ -76,6 +76,6 @@ export const find=async(req,res)=>
             res.status(200).json({finduser});
         }
         catch(err){
-            res.status(500).json({error:"internal server error"});
+            res.status(500).json({error:"Internal server error"});
         }
     }
